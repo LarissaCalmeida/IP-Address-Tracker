@@ -114,6 +114,19 @@ section span {
     z-index: 0;
 }
 
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: hsl(0, 0%, 17%);
+}
+
+footer a {
+    color: rgb(90, 90, 224);
+}
+
 @media screen and (max-width: 1280px) {
     section {
         width: 80%;
