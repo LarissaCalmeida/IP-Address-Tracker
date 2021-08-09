@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;   
+    font-family: 'Rubik', sans-serif;
+    border: none;
+}
+
+body {
+    width: 100vw; 
+    height: 100vh;
+}
+
+header {
+    background: url(../images/pattern-bg.png) no-repeat;
+    background-size: cover;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+}
+
+header h1 {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 2rem;
+
+    margin: 2rem 0;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+    /* width: 90%; */
+}
+
+header form button {
+    background: black;
+    border-radius: 0 12px 12px 0;
+    transition: all 0.3s;
+    outline: none;
+}
+
+header input {
+    padding: 1rem;
+    width: 450px;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+header img {
+    border-radius: 0 12px 12px 0;
+    padding: 1.1rem 1.2rem;
+    cursor: pointer;
+}
+
+header button:hover {
+    background: hsl(0, 0%, 17%);
+}
+
+section {
+    display: flex;
+    padding: 2rem 0;
+    border-radius: 12px;
+    width: 70%;
+    height: 150px;
+    background: #FFF;
+    box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: -50px;
+    z-index: 2;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+
+    width: 35%;
+}
+
+section div strong {
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 59%);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+    color: hsl(0, 0%, 17%);
+}
+
+section span {
+    align-self: center;
+    content: "";
+    width: 1px;
+    height: 80%;
+    background: hsl(0, 0%, 59%);
+}
+
+#mapid {
+    height: 60%;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    section {
+        width: 90%;
+    }
+
+    section div p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section div p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    header form {
+        width: 90%;
+    }
+
+    header input {
+        width: 90%;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 2rem 0 1rem 0;
+        bottom: -183px;
+    }
+    
+    section div {
+        align-items: center;
+        width: 100%;
+    }
+
+    section div p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem
+    }
+
+    section div strong {
+        font-size: 0.8rem;
+    }
+}
