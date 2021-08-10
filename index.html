@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
   crossorigin=""/>  
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
   crossorigin=""></script>
+  
   <title>IP Address Tracker</title>
 
 </head>
@@ -24,12 +25,12 @@
     <h1>IP Address Tracker</h1>
     
       <form id="searchForm">
-        <input type="text" placeholder="Search for any IP address or domain" name="IP" id="IP">
+        <input type="text" placeholder="Search for any IP address or domain" name="IP" id="IP" onclick="resize()">
         <button type="submit"><img src="./images/icon-arrow.svg" alt="Arrow Right" id="search"></button>  
       </form>
 
 
-    <section>
+    <section class="data">
       <div>
         <strong>IP Address</strong>
         <p class="ipAddress">192.212.174.101</p>
@@ -58,11 +59,10 @@
   <div id="mapid"></div>
   
   <footer class="attribution">
-    Coded by <a href="https://github.com/LarissaCalmeida">Larissa Carvalho 💙</a>.
+    Coded by <a href="https://github.com/LarissaCalmeida" target="_blank" rel="noopener noreferrer">Larissa Carvalho 💙</a>.
   </footer>
 
-  <!-- Make sure you put this AFTER Leaflet's CSS -->
-  
+ 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
